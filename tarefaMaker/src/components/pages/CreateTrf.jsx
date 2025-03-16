@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./createBook.module.css";
+import style from "./createTrf.module.css";
 import { useState } from "react";
 import Input from "../form/Input.jsx";
 import Select from "../form/Select.jsx";
@@ -54,7 +54,7 @@ const CreateBook = () => {
                     name="txt_descricao"
                     id="tct_livro"
                     placeholder="Descreva a tarefa: "
-                    text="Insira a descrição do livro: "
+                    text="Insira a descrição da Tarefa: "
                     handlerChange={handlerchanceTrf}
                 />
 

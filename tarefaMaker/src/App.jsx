@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/layout/NavBar.jsx';
 import Container from './components/layout/Container.jsx';
 import Home from './components/pages/Home.jsx';
-import CreateBook from './components/pages/CreateBook.jsx';
-import ListBook from './components/pages/ListBook.jsx';
+import CreateBook from './components/pages/CreateTrf.jsx';
+import ListBook from './components/pages/ListTrf.jsx';
 
 function App() {
   return (
