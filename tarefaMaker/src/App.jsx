@@ -5,33 +5,25 @@ import Container from './components/layout/Container.jsx';
 import Home from './components/pages/Home.jsx';
 import CreateBook from './components/pages/CreateTrf.jsx';
 import ListBook from './components/pages/ListTrf.jsx';
+import Login from './components/pages/Login.jsx';
 
 function App() {
   return (
-    <>
-      <div>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
 
-        <BrowserRouter>
 
-          <Container>
-
-            <Routes>
-              <Route path='/' element={<NavBar/>}>
-
-                <Route path='/' element={<Home/>}/>
-                <Route path='/newBook' element={<CreateBook/>}/>
-                <Route path='/listBook' element={<ListBook/>}/>
-
-              </Route>
-            </Routes>
-
-          </Container>
-
-        </BrowserRouter>
-
-      </div>
-    </>
-  )
+             <Route element={<NavBar />}>
+            <Route path="/Home" element={<Home />} />
+            <Route path="/newBook" element={<CreateBook />} />
+            <Route path="/listBook" element={<ListBook />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -7,11 +7,11 @@ const NavBar = ()=>{
             <nav className={style.navbar}>
                 <ul className={style.list}>
 
-                    <Link to='/'>
+                    <Link to='/Home'>
                         <li className={style.item}><img src="./tarefa.png" alt="Logo tipo" className={style.logo}/></li>
                     </Link>
 
-                    <Link to='/'>
+                    <Link to='/Home'>
                         <li className={style.item}>HOME</li>
                     </Link>
 
